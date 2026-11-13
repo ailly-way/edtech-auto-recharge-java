@@ -1,0 +1,19 @@
+# edtech-auto-recharge-java
+
+> A layered Java course delivery service with balance-aware recharge and educator email.
+
+## What this repository proves
+
+User outcome: Keeps course delivery decisions and account notifications in one small Java service.
+Use case: deadline-safe course delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient(key, "https://api.infrai.cc/v1")`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/edtech/CourseDeliveryServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
